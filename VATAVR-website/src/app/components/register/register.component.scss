@@ -1,0 +1,32 @@
+.register-container {
+  position: absolute;
+  width: 100vw;
+  height: 1000px;
+}
+
+/* Center the login container horizontally and vertically */
+.register-form-container {
+  top: 25%;
+  left: 50%;
+  margin-top: 250px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 70vw;
+  height: auto;
+  background-color: white;
+  padding: 5%;
+  box-shadow: 5px 10px 18px rgba(20, 26, 35, 0.78);
+}
+
+.alert-container {
+  height: 10%;
+}
+
+.button-container {
+  padding-top: 5%;
+  text-align: center;
+}
+.radioButtons {
+  margin-left: 20px;
+}
+

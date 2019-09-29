@@ -1,0 +1,172 @@
+text {
+    font-size: 20px;
+}
+.body {
+    font-size: 20px;
+}
+.linegraph {
+    padding: 1rem;
+}
+.container {
+    padding: 5rem 0;
+    background-color: white;
+    margin-right: 80px;
+}
+.me {
+    width: 100px;
+    margin-left: 20px;
+}
+.tick {
+    opacity: 0.7;
+}
+.line {
+    fill: none;
+    stroke: #4FC3F7;
+    stroke-width: 5px;
+  }
+.lowerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #546E7A;
+    width: 100%;
+    padding: 0rem 10rem;
+}
+.people {
+    display: flex;
+    flex-direction: column;
+}
+  .profile {
+	display: flex;
+	align-items: center;
+	width: 300px;
+    padding: 2rem;
+    margin-bottom: 3rem; 
+    
+}
+
+.cardItem {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 2rem;
+    width:1000px;
+    height: 75px;
+    color:white;
+    
+}
+.detail {
+    color:white;
+    font-size: 16px;
+    margin-left: 25px;
+}
+.card {
+    background-color:#607D8B;
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    color: white;
+    border: 0px;
+    height:100%;
+    
+}
+.name {
+    font-size: 20px;
+    color: white;
+    margin-left: 25px;
+}
+.doctorDashboard {
+    display: flex;
+    justify-content: space-between;
+}
+.LHS {
+    background-color: #546E7A;
+}
+
+.doctorProfile {
+    margin-bottom: 1rem !important;
+    padding: 1rem !important;
+    font-size: 16px !important;
+    width: 350px;
+}
+
+.doctorProfile:hover {
+    background-color: rgb(103, 134, 148);
+}
+.doctorcontainer {
+    
+    background-color: white;
+}
+.doctorcard {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    color: white;
+    border: 0px;
+    height:auto;
+    margin-top: 25px;
+}
+.doctorcardItem {
+    display: flex;
+    margin: 0rem 2rem;
+    flex-direction: column;
+    align-content: center;
+    width:800px;
+    height: 75px;
+    color:black;
+    border: 1px;
+}
+.doctorcardItem:hover {
+    background-color: azure;
+}
+.doctorDate {
+    font-size: 12px;
+    color: black;
+    opacity: 0.7;
+}
+.enterField {
+    flex-direction: row !important;
+    width: 800px;
+    justify-content: space-between;
+}
+textarea {
+    width: 700px;
+}
+button {
+    background-color: rgb(65, 124, 201);
+    color:white;
+    width: 100px;
+    border: 0px;
+}
+.chartName {
+    font-size: 24px;
+    margin: 0rem 1rem 2rem 2rem;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 800px;
+    margin: 1rem 2rem;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 4px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .header {
+      display: flex;
+      justify-content: space-between;
+      width: 900px;
+  }
+  .toggle {
+      font-size: 14px;
+      width: 150px;
+      height: 50px;
+  }
+  #table {
+      display: none;
+  }

@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">VATAVR</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+          aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto">
+      <!-- Apply Boostrap CSS class 'active' if the routeLink exactly matches '/home' -->
+      <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"
+          [routerLink]="['/Home']">
+        <a class="nav-link" href="/Home">Dashboard <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"
+          [routerLink]="['/']">
+        <a class="nav-link" href="/EMR">EMR <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <ul  class="navbar-nav login">
+      <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"
+          [routerLink]="['/Login']">
+        <a class="nav-link" href="#">Login</a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"
+          [routerLink]="['/Register']">
+        <a class="nav-link" href="/Register">Register</a>
+      </li>
+    </ul>
+  </div>
+</nav>

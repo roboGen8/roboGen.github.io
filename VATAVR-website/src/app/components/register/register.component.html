@@ -1,0 +1,64 @@
+<div class="register-container bg-secondary">
+  <div class="register-form-container">
+    <div class="alert-container">
+      <ngb-alert *ngIf="registerSuccess" type="success">Register Success!</ngb-alert>
+      <ngb-alert *ngIf="registerFailure" (close)="registerFailure = false"
+                 type="danger">{{registrationFailureMessage}}</ngb-alert>
+    </div>
+    <form #registerForm="ngForm">
+      <div class="form-group row">
+        <label for="name">Your Full Name</label>
+        <input type="text" class="form-control" id="name" [required]="true"
+               [(ngModel)]="registrationInfo.name" minlength="1" name="name">
+      </div>
+      <div class="form-group row">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" 
+               [(ngModel)]="registrationInfo.email" [required]="true" minlength="3"
+               name="email">
+      </div>
+      <div class="form-group row">
+        <label for="phoneNumber">Phone Number</label>
+        <input type="text" class="form-control" id="phoneNumber" [required]="true"
+               [(ngModel)]="registrationInfo.phoneNumber" minlength="1" name="phoneNumber">
+      </div>
+      <div class="form-group row">
+        <label for="userType">Are you a doctor or a patient?       </label>
+        
+        <!-- <input type="text" class="form-control" id="userType" [required]="true"
+               [(ngModel)]="registrationInfo.userType" minlength="1" name="userType"> -->
+          <div class="radioButtons">
+            <input type="radio"  id="userType" [required]="true" [(ngModel)]="registrationInfo.userType" minlength="1"name="userType" value="Doctor"> Doctor<br>
+            <input type="radio"  id="userType" [required]="true" [(ngModel)]="registrationInfo.userType" minlength="1"name="userType" value="Patient"> Patient<br>
+         
+          </div>
+      </div>
+      <div class="form-group row">
+        <label for="doctorName">If you are a patient, who is your doctor?</label>
+        <input type="text" class="form-control" id="doctorName" [required]="false"
+               [(ngModel)]="registrationInfo.doctorName" minlength="1" name="doctorName">
+      </div>
+      <div class="form-group row">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" [required]="true"
+               [(ngModel)]="registrationInfo.username" minlength="1" name="username">
+      </div>
+      <div class="form-group row">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Password" [required]="true"
+               [(ngModel)]="registrationInfo.password" minlength="1" name="password">
+      </div>
+      <div class="form-group row">
+        <label for="password">Confirm Password</label>
+        <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Password"
+               [required]="true" [(ngModel)]="registrationInfo.password" minlength="1" name="confirm-password">
+      </div>
+      <div class="button-container">
+        <button type="submit" class="btn btn-primary" (click)="onRegister()" [disabled]="!registerForm.form.valid">
+          Register
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
